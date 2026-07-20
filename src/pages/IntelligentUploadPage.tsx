@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ShieldCheck, FileCheck, CheckCircle2, Lock } from 'lucide-react';
+import { ArrowRight, ShieldCheck, FileCheck, Lock } from 'lucide-react';
 import { useOnboarding } from '../context/OnboardingContext';
 import { UploadCard } from '../components/ui/UploadCard';
 import { Button } from '../components/ui/Button';
