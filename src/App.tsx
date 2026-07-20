@@ -9,7 +9,7 @@ import { LandingPage } from './pages/LandingPage';
 import { AIWelcomePage } from './pages/AIWelcomePage';
 import { AnalysisFocusPage } from './pages/AnalysisFocusPage';
 import { IntelligentUploadPage } from './pages/IntelligentUploadPage';
-import { ReadyForAnalysisPage } from './pages/ReadyForAnalysisPage';
+import { AIAnalyzingPage } from './pages/AIAnalyzingPage';
 
 const AppContent: React.FC = () => {
   const { currentStep, setStep } = useOnboarding();
@@ -24,8 +24,8 @@ const AppContent: React.FC = () => {
         return <AnalysisFocusPage />;
       case 'document-upload':
         return <IntelligentUploadPage />;
-      case 'ready-for-analysis':
-        return <ReadyForAnalysisPage />;
+      case 'ai-analyzing':
+        return <AIAnalyzingPage />;
       default:
         return <LandingPage />;
     }

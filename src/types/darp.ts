@@ -5,7 +5,7 @@ export type OnboardingStep =
   | 'ai-welcome'
   | 'analysis-focus'
   | 'document-upload'
-  | 'ready-for-analysis';
+  | 'ai-analyzing';
 
 export type AnalysisFocusId = 
   | 'purchase-payables'
@@ -57,7 +57,7 @@ export interface AuthServiceStub {
 
 export interface DocumentServiceStub {
   uploadDocument(file: File, categoryId: string): Promise<UploadedFileItem>;
-  autoCategorizeDocument?(file: File): Promise<string>;
+  autoCategorizeDocument(file: File): Promise<string>;
 }
 
 export interface PaymentServiceStub {

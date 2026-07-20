@@ -21,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed select-none active:scale-[0.98]';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold transition-all duration-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed select-none active:scale-[0.98]';
 
   const sizeStyles = {
     sm: 'px-3 py-1.5 text-xs gap-1.5',
@@ -30,8 +30,8 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const variantStyles = {
-    primary: 'bg-cyan-600 hover:bg-cyan-500 text-white shadow-md shadow-cyan-900/20 focus:ring-cyan-500 border border-cyan-400/30',
-    glow: 'bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 border border-cyan-300/30 focus:ring-cyan-400',
+    primary: 'bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:hover:bg-cyan-500 text-white shadow-md shadow-cyan-900/20 focus:ring-cyan-500 border border-cyan-400/30',
+    glow: 'bg-gradient-to-r from-cyan-600 via-teal-600 to-indigo-600 hover:from-cyan-700 hover:to-indigo-700 dark:from-cyan-500 dark:via-teal-500 dark:to-indigo-600 dark:hover:from-cyan-400 dark:hover:to-indigo-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 border border-cyan-300/30 focus:ring-cyan-500',
     secondary: 'bg-bg-tertiary hover:bg-bg-secondary text-text-primary border border-border-subtle focus:ring-slate-400',
     outline: 'bg-transparent hover:bg-bg-tertiary text-text-primary border border-border-strong focus:ring-cyan-500',
     ghost: 'bg-transparent hover:bg-bg-tertiary text-text-secondary hover:text-text-primary border border-transparent',
